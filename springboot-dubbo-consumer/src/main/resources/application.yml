@@ -1,0 +1,15 @@
+server:
+  port: 8086
+
+# dubbo配置
+dubbo:
+  application:
+    name: springboot-dubbo-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  annotation:
+    package: 'com.haigeek'
+  consumer:
+    timeout: 500000
+    check: false
+    version: 1.0.0 #dubbo默认版本号，在url显示为default.version=xxx
